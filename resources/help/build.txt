@@ -1,0 +1,34 @@
+#title "CPF's build help page"
+
+#set (
+	"section", 
+	{mod:[b#00FF00]}
+)
+
+#set (
+	"title", 
+	{mod:"U"}
+)
+
+#section "Usage"
+
+#plain "des trucs"
+
+#section "Options"
+
+#array {
+	"cols":(, "Description"),
+	"mod":(b#0000FF, p),
+	"data":(
+		(("-a", "all"), "Build all"),
+		(("-r", "release"), "Build executable target in release mode"),
+		(("-q", "quiet"), "Do no print log messages"),
+		(("-h", "help"), "Display the build help message and do nothing"),
+		(("-L", "staticlib"), "Build library target as a static library"),
+		(("-l", "dynlib"), "Build library as a dynamic library"),
+		(("-d", "docs"), "Build documentation"),
+		(("-t", "tests"), "Build tests"),
+		(("-e", "examples"), "Build examples"),
+		(("-C", ("config-file", "<FILE>")), "Specify a configuration file"),
+	)
+}

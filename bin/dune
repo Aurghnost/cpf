@@ -1,6 +1,0 @@
-(include_subdirs qualified)
-(executable
- (public_name cpf)
- (name main)
- (libraries cpf dune-build-info)
-)
